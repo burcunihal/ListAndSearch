@@ -9,8 +9,8 @@ public class DbHelper {
     public Connection getConnection() throws SQLException{
         return DriverManager.getConnection(dbUrl, userName, password);
     }
-     public void showErrorMessage(SQLException excepriton){
-        System.out.println("Hata!:"+excepriton.getMessage());
-        System.out.println("Hata kodu:"+excepriton.getErrorCode());
+     public void showErrorMessage(SQLException exception){
+        System.out.println("Hata!:"+exception.getMessage());
+        System.out.println("Hata kodu:"+exception.getErrorCode());
     }
 }
